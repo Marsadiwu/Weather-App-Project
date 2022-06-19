@@ -1,0 +1,93 @@
+body {
+  background: white;
+  margin: 10px auto;
+  background-attachment: fixed;
+}
+.frame {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  background-color: rgba(167, 185, 202, 0.5);
+  border-radius: 7px;
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: rgb(49, 23, 146);
+  text-transform: uppercase;
+  font-size: 36.7 px;
+  font-weight: bold;
+}
+#country {
+  text-transform: none;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: light;
+  color: rgb(204, 76, 30);
+}
+.btn {
+  color: rgb(49, 23, 146);
+  border: 1px solid rgb(49, 23, 146);
+}
+.btn:hover {
+  background: rgb(49, 23, 146);
+  border: 1px solid white;
+  color: white;
+}
+
+.second {
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(31, 31, 32);
+  font-size: 15px;
+}
+.units {
+  color: rgb(31, 31, 32);
+  font-size: 15px;
+  position: relative;
+  top: -15px;
+}
+.temp-low {
+  font-size: 25px;
+}
+
+.fa-circle {
+  color: goldenrod;
+  font-size: 120px;
+}
+
+.temp-today {
+  font-size: 40px;
+}
+.handwritten {
+  font-family: "Square Peg", cursive;
+  font-size: 50px;
+  color: rgb(204, 76, 30);
+}
+.third {
+  margin-top: 30px;
+}
+.card {
+  background-color: rgba(167, 185, 202, 0.1);
+  text-align: center;
+}
+
+.header {
+  color: rgb(49, 23, 146);
+}
+.forecast {
+  color: goldenrod;
+  font-size: 70px;
+}
+.createdBy {
+  font-family: monospace;
+  position: relative;
+  left: 770px;
+  font-size: 10px;
+}

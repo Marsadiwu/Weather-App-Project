@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Sunshine or rain?</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5478de293f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <div class="frame">
+        <div class="row">
+          <div class="col-7">
+            <h1>BREMEN, <span id="country">Germany</span></h1>
+          </div>
+          <div class="col-5 search">
+            <form class="d-flex" id="search-form">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Change City"
+                autocomplete="off"
+                id="search-text-input"
+              />
+              <button class="btn btn-outline-info" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7"><h2></h2></div>
+          <div class="col-5">
+            <button type="button" class="btn btn-success" id="current-location">
+              current location
+            </button>
+          </div>
+        </div>
+
+        <div class="row second">
+          <div class="col-4">
+            <i class="fa-solid fa-circle"></i>
+          </div>
+          <div class="col-4 temp-today">
+            <strong id="temp-today"> °C</strong>
+            <div class="temp-low">6°C</div>
+          </div>
+          <div class="col-4 handwritten">Enjoy your day!</div>
+        </div>
+        <div class="row third">
+          <div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <p class="header">WED</p>
+                <i class="fa-solid fa-circle forecast"></i>
+                <br />
+                <br />
+                <p><strong>14°C</strong><br />6°C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <p class="header">THU</p>
+                <i class="fa-solid fa-circle forecast"></i>
+                <br />
+                <br />
+                <p><strong>14°C</strong><br />6°C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <p class="header">FRI</p>
+                <i class="fa-solid fa-circle forecast"></i>
+                <br />
+                <br />
+                <p><strong>14°C</strong><br />6°C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <p class="header">SAT</p>
+                <i class="fa-solid fa-circle forecast"></i>
+                <br />
+                <br />
+                <p><strong>14°C</strong><br />6°C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <p class="header">SUN</p>
+                <i class="fa-solid fa-circle forecast"></i>
+                <br />
+                <br />
+                <p><strong>14°C</strong><br />6°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <p class="createdBy">Created by Saskia Wulff | 2022</p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
